@@ -1,5 +1,5 @@
 nav {
-    background-color: steelblue;
+    background-color: purple;
     padding: 10px;
 }
 
@@ -10,14 +10,14 @@ nav a {
 }
 
 h1 {
-    color: steelblue;
+    color: purple;
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
+    border: 1px solid plum;
+    padding: 15px;
     box-shadow: 0 0 30px gray;
 }
 
