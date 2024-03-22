@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 body {
     font-family: var(--paragraph-font);
@@ -13,6 +14,7 @@ body {
     --accent1-color: #78C5D7;
     --accent2-color: #FCE172;
 
+    --h1-font: "Kaushan Script", display;
     --heading-font: "Biryani", sans-serif;
     --heading-font-weight: 800;
     --paragraph-font: "Biryani", sans-serif;
@@ -23,7 +25,12 @@ body {
     --nav-hover-background-color: #78C5D7;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+    font-family: var(--h1-font);
+    color: white;
+}
+
+h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     font-weight: var(--heading-font-weight);
     color: var(--primary-color);
