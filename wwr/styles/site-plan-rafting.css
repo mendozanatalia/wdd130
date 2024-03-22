@@ -1,0 +1,54 @@
+@import url('https://fonts.google.com/specimen/Biryani?query=biryani');
+@import url('https://fonts.google.com/specimen/Kaushan+Script?query=kau');
+
+body {
+    font-family: var(--default-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+:root {
+    --primary-color: #134266;
+    --secondary-color: #F7F7F7;
+    --accent1-color: #78C5D7;
+    --accent2-color: #FCE172;
+
+    --heading-font: 'https://fonts.google.com/specimen/Kaushan+Script?query=kau', serif;
+    --default-font: 'https://fonts.google.com/specimen/Biryani?query=biryani', sans-serif;
+    --nav-bg-color: #F7F7F7;
+    --nav-link-color: blue;
+    --nav-hover-link-color: purple;
+    --nav-hover-bg-color: rgb(232, 232, 232);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-bg-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-bg-color);
+}
