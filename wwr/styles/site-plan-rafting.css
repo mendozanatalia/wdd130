@@ -1,8 +1,8 @@
-@import url('https://fonts.google.com/specimen/Biryani?query=biryani');
-@import url('https://fonts.google.com/specimen/Kaushan+Script?query=kau');
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap');
 
 body {
-    font-family: var(--default-font);
+    font-family: var(--paragraph-font);
+    font-weight: var(--paragraph-font-weight);
     max-width: 960px;
     padding: 20px;
 }
@@ -13,8 +13,10 @@ body {
     --accent1-color: #78C5D7;
     --accent2-color: #FCE172;
 
-    --heading-font: 'https://fonts.google.com/specimen/Kaushan+Script?query=kau', serif;
-    --paragraph-font: 'https://fonts.google.com/specimen/Biryani?query=biryani', sans-serif;
+    --heading-font: "Biryani", sans-serif;
+    --heading-font-weight: 800;
+    --paragraph-font: "Biryani", sans-serif;
+    --paragraph-font-weight: 300;
     --nav-background-color: #F7F7F7;
     --nav-link-color: blue;
     --nav-hover-link-color: purple;
@@ -23,6 +25,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
+    font-weight: var(--heading-font-weight);
     color: var(--primary-color);
 }
 
