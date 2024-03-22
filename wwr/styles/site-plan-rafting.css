@@ -17,10 +17,10 @@ body {
     --heading-font-weight: 800;
     --paragraph-font: "Biryani", sans-serif;
     --paragraph-font-weight: 300;
-    --nav-background-color: #F7F7F7;
-    --nav-link-color: blue;
-    --nav-hover-link-color: purple;
-    --nav-hover-background-color: rgb(232, 232, 232);
+    --nav-background-color: #134266;
+    --nav-link-color: #F7F7F7;
+    --nav-hover-link-color: #FCE172;
+    --nav-hover-background-color: #78C5D7;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -52,6 +52,10 @@ nav a {
 }
 
 nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
