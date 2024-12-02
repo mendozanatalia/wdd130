@@ -1,0 +1,152 @@
+/* WDD130 | Natalia Mendoza */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* STEP 4: Write de CSS */
+/* 2. Root (Variables) */
+:root {
+    --primary-color: #134266;
+    --secondary-color: #F7F7F7;
+    --accent1-color: #79C5D7;
+    --accent2-color: #FBE072;
+
+    --nav-background-color: #134266;
+    --nav-link-color: #F7F7F7;
+    --nav-hover-link-color: #134266;
+    --nav-hover-background-color: #fce172;
+    
+    --campaign-font: "Kaushan Script", display;
+    --campaign-font-weight: 800;
+    --h2-font: "Montserrat", sans-serif;
+    --h2-font-weight: 700;
+    --h3-font: "Montserrat", sans-serif;
+    --h3-font-weight: 600;
+    --h4-font: "Montserrat", sans-serif;
+    --h4-font-weight: 500;
+    --h5-font: "Montserrat", sans-serif;
+    --h5-font-weight: 400;
+    --paragraph-font: "Montserrat", sans-serif;
+    --paragraph-font-weight: 400;    
+}
+
+/* 3-4. Heading and paragraph */
+h1 {
+    font-family: var(--campaign-font);
+    font-weight: var(--campaign-font-weight);
+    color: var(--secondary-color);
+    padding: 1rem;
+}
+
+h2 {
+    font-family: var(--h2-font);
+    font-weight: var(--h2-font-weight);
+    color: var(--primary-color);
+    padding: 1rem;
+}
+
+h3 {
+    font-family: var(--h3-font);
+    font-weight: var(--h3-font-weight);
+    color: var(--primary-color);
+    padding: 1rem;
+}
+
+h4 {
+    font-family: var(--h4-font);
+    font-weight: var(--h4-font-weight);
+    color: var(--primary-color);
+    padding: 1rem;
+}
+
+h5 {
+    font-family: var(--h5-font);
+    font-weight: var(--h5-font-weight);
+    color: var(--primary-color);
+    padding: 1rem;
+}
+
+p {
+    font-family: var(--paragraph-font);
+    font-weight: var(--paragraph-font-weight);
+    color: black;
+    padding: 1rem;
+}
+
+/* 5. Remove link underlines */
+a {
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+}
+
+/* HEADER */
+header {
+    background-color: var(--accent1-color);
+    padding: 20px;
+}
+
+header .logo {
+    width: 200px;
+    margin: 0;
+    padding: 25px;
+}
+
+/* STEP 5: Style the Hero Container (Position Absolute) */
+/* Header Section*/
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 100px;
+    left: 600px;
+}
+
+.hero article {
+    background-color: #FCE172;
+    position: absolute;
+    top: 250px;
+    right: 200px;
+    left: 200px;
+    height: auto;
+}
+
+.hero article img {
+    float: inline-end;
+    max-width: 40%;
+    margin: 1rem;
+}
+
+/* Section: History */
+.history img{
+    float: inline-end;
+    max-width: 20%;
+}
+
+/* Section: Adventure Awaits You! */
+.adventure img{
+    max-width: 30%;
+}
+
+/* Footer */
+footer {
+    background-color: #79C5D7;
+}
+
+.sociallinks img {
+    max-width: 30px;
+}
+
+.sociallinks a {
+    text-decoration: none;
+}
