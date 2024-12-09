@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label>Full Name: <input type="text" name="fullname"></label>
+                    <label>Email: <input type="email" name="useremail"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Questions</legend>
+                    <!-- Browser -->
+                    <label for="browser">What is your favorite browser?</label>
+                    <select name="browser" id="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="opera">Opera</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="edge">Edge</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <!-- Pet -->
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" name="pet" id="pet">
+
+                    <!-- Places -->
+                    <label for="feedback">List the places you have lived:</label>
+                    <textarea name="feedback" id="feedback" rows="4" placeholder="Santa Cruz, Sucre, Cochabamba"></textarea>       
+                </fieldset>
+                <button type="submit">Submit Poll</button>
+            </form>
+        </main>    
+        <footer>
+            <p>©2024 | HTML Form - User Poll Activity | Natalia Mendoza</p>
+        </footer>
+    </body>
+</html>
