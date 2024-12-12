@@ -75,7 +75,7 @@ input[type="checkbox"] {
 
 button {
     margin: 1rem;
-    background-color: #0A26A4;
+    background-color: var(--color1);
     color: white;
     border: none;
     border-radius: 0.75rem;
@@ -84,7 +84,7 @@ button {
 }
 
 button:hover {
-    background-color: #19DCEA;
+    background-color: var(--color2);
 }
 
 footer {
@@ -95,4 +95,19 @@ footer {
     font-size: 1rem;
     color: white;
     border-top: 1px solid white;
+}
+
+/* Adding <div> */
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
 }
