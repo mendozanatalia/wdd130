@@ -34,55 +34,58 @@
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
-    <!-- 5. Main -->
+
+    <!-- Main -->
     <main>
-        <!-- 5.1. Section: Hero -->
+        <!-- Hero -->
         <div class="hero">
-            <img src="images/hero-1.jpg" alt="hero">
+            <img src="images/hero-2.png" alt="hero">
             <article>
-                <h1>Dry Oar: White Water Rafting</h1>
-                <img src="images/happy-client-1.jpg" alt="happy client">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eveniet magnam nisi fugit, assumenda laborum explicabo dolorum non nam voluptatem? Harum minima eos rem adipisci quisquam? Quasi magni ad aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptates laboriosam inventore nobis eius? Amet architecto distinctio aliquid, veritatis minus quidem id molestias pariatur ullam mollitia quis iste ratione odit?</p>
+                <h1>Contact Us</h1>
             </article>
         </div>
 
-        <!-- 5.2. Section: History -->
-        <section class="history">
-            <h2>History</h2>
-            <img src="images/history-1.jpg" alt="history">
-            <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nihil ducimus deleniti dolorum possimus obcaecati praesentium dolorem neque ipsa in molestiae eligendi, distinctio ullam quo, inventore consectetur quam esse temporibus. .</p>
-            <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sed vel porro sequi neque molestiae doloremque ad eius dolorem, adipisci qui alias impedit nam placeat quo nihil aliquam libero doloribus.</p>
-        </section>
-
-        <!-- 5.3. Section: Adventure Awaits -->
-        <section class="adventure">
-            <h2>Adventure Awaits You!</h2>
-            <div class="figure-container">
-                <figure>
-                    <img src="images/rafting1-1.jpg" alt="rafting1">
-                    <figcaption>Teamwork</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting2-1.jpg" alt="rafting2">
-                    <figcaption>Feel the Rush</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting3-1.jpg" alt="rafting3">
-                    <figcaption>Adrenaline</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting4-1.jpg" alt="rafting4">
-                    <figcaption>Nature Awaits</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting5-1.jpg" alt="rafting5">
-                    <figcaption>Make Waves</figcaption>
-                </figure>
+        <!-- Form -->
+        <section class="form-container">
+            <div class="info-column">
+                <h3>Address</h3>
+                <h3>Phone Number</h3>
+                    <p>000 000 000</p>
+                <h3>E-Mail</h3>
+                    <p>dryorar@gmail.com</p>
+                <h3>Map</h3>
             </div>
+
+            <form>
+                <h2>Send Us a Message</h2>
+                <fieldset>
+                    <!-- Full Name -->
+                    <label>Full Name: <input type="text" name="fullname"></label>
+                    <!-- E-Mail -->
+                    <label>E-Mail: <input type="text" name="email"></label>
+
+                    <!-- Purpose of the message -->
+                    <label>Purpose of the message</label>
+                    <input type="radio" name="purpose" id="general">
+                    <label for="general">General Inquiry</label>
+                    <input type="radio" name="purpose" id="reservation">
+                    <label for="reservation">Reservation Question</label>
+                    <input type="radio" name="purpose" id="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+
+                    <!-- Message -->
+                    <label>Enter your message</label>
+                    <textarea name="message" id="message" rows="4" placeholder="Message..."></textarea>
+                    <!-- Subscription -->
+                    <label>Please, subscribe me to the monthly newsletter</label>
+                    <input type="checkbox" name="subscribe" id="subscribe">    
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
         </section>
     </main>
 
-    <!-- 6. Footer -->
+    <!-- Footer -->
     <footer>
         <p>©2024 | Dry Oar | Natalia Mendoza</p>
         <nav class="sociallinks">

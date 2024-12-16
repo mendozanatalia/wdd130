@@ -69,7 +69,7 @@ h5 {
     padding: 1rem;
 }
 
-p {
+p, form, button {
     font-family: var(--paragraph-font);
     font-weight: var(--paragraph-font-weight);
     color: black;
@@ -232,4 +232,55 @@ footer nav {
 
 .sociallinks img {
     max-width: 40px;
+}
+
+
+/* FORM */
+.form-container {
+    background-color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 10%;
+    border-radius: .5rem;
+}
+
+.info-column {
+    background-color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    background-color:var(--accent2-color);
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+fieldset {
+    display: grid;
+
+}
+
+label {
+    text-align: left;    
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
 }

@@ -28,13 +28,12 @@ h1 {
 }
 
 form {
+    display: grid;
+    background-color: white;
     width: 650px;
     margin: auto;
     padding: 10rem;
-    padding: 1rem;
     border-radius: 1rem;
-    background-color: white;
-    display: grid;
 }
 
 fieldset {
