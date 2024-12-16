@@ -1,6 +1,9 @@
 /* WDD130 | Natalia Mendoza */
 
-/* General config */
+/* ------------------------------------------------------ */
+/* GENERAL CONFIG */
+/* ------------------------------------------------------ */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -87,7 +90,6 @@ figcaption {
 }
 
 /* HEADER */
-/* Header */
 header {
     background-color: var(--accent1-color);
     display: grid;
@@ -127,7 +129,7 @@ header nav a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
-/* Hero*/
+/* Hero */
 .hero {
     position: relative;
     text-align: center;
@@ -138,6 +140,33 @@ header nav a:hover {
     width: 100%;
     height: auto;
 }
+
+/* FOOTER */
+footer {
+    background-color: #79C5D7;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer p {
+    grid-column: 2/3;
+    place-self: center;
+}
+
+footer nav {
+    padding: 5px;
+    grid-column: 3/4;
+    justify-self: end;
+    align-self: center;
+}
+
+.sociallinks img {
+    max-width: 40px;
+}
+
+/* ------------------------------------------------------ */
+/* 1. ABOUT US */
+/* ------------------------------------------------------ */
 
 .hero article {
     background-color: rgb(251 225 114 / 0.9);
@@ -211,31 +240,11 @@ header nav a:hover {
     width: 100%;
 }
 
-/* Footer */
-footer {
-    background-color: #79C5D7;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
+/* ------------------------------------------------------ */
+/* CONTACT US */
+/* ------------------------------------------------------ */
 
-footer p {
-    grid-column: 2/3;
-    place-self: center;
-}
-
-footer nav {
-    padding: 5px;
-    grid-column: 3/4;
-    justify-self: end;
-    align-self: center;
-}
-
-.sociallinks img {
-    max-width: 40px;
-}
-
-
-/* FORM */
+/* Form */
 .form-container {
     background-color: var(--accent2-color);
     display: grid;
@@ -286,3 +295,13 @@ button:hover {
     background-color: var(--accent1-color);
     color: var(--primary-color);
 }
+
+/* ------------------------------------------------------ */
+/* HOME PAGE */
+/* ------------------------------------------------------ */
+
+
+
+/* ------------------------------------------------------ */
+/* TRIPS */
+/* ------------------------------------------------------ */
