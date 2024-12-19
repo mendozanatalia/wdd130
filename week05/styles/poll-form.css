@@ -97,7 +97,7 @@ footer {
 }
 
 /* Adding <div> */
-.form-item {
+/* .form-item {
     display: grid;
     align-items: center;
 }
@@ -109,4 +109,4 @@ footer {
 
 .column2 {
     grid-template-columns: 1fr 2fr;
-}
+} */

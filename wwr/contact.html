@@ -47,7 +47,9 @@
         </div>
 
         <!-- Company Information -->
-        <div class="info">
+        <div class="info-container">
+            <h2>MORE INFORMATION?</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente odio deserunt voluptates vitae! Reiciendis aut alias ab dolorum consequuntur voluptatibus similique tenetur mollitia, veniam vitae optio, adipisci praesentium, nulla accusantium.</p>
             <h3>Address</h3>
             <p>0000 Ayaamaya | Unknown City, ID 00000</p>
             <h3>Contact</h3>
@@ -65,26 +67,37 @@
                 <h2>Send Us a Message</h2>
                 <fieldset>
                     <!-- Full Name -->
-                    <label>Full Name: <input type="text" name="fullname"></label>
+                    <div class="column1">
+                        <label>Full Name: <input type="text" name="fullname" placeholder="Enter your full name"></label>
+                    </div>
                     <!-- E-Mail -->
-                    <label>E-Mail: <input type="text" name="email"></label>
+                     <div class="column2">
+                        <label>E-Mail: <input type="text" name="email"></label>
+                     </div>
 
                     <!-- Purpose of the message -->
                     <label>Purpose of the message</label>
                     <input type="radio" name="purpose" id="general">
-                    <label for="general">General Inquiry</label>
-                    <input type="radio" name="purpose" id="reservation">
-                    <label for="reservation">Reservation Question</label>
-                    <input type="radio" name="purpose" id="suggestion">
-                    <label for="suggestion">Website Suggestion</label>
+                    <div class="column1">
+                        <label for="general">General Inquiry</label>
+                        <input type="radio" name="purpose" id="reservation">
+                        <label for="reservation">Reservation Question</label>
+                        <input type="radio" name="purpose" id="suggestion">
+                        <label for="suggestion">Website Suggestion</label>
+                    </div>
 
                     <!-- Message -->
-                    <label>Enter your message</label>
-                    <textarea name="message" id="message" rows="4" placeholder="Message..."></textarea>
+                    <div class="column2">
+                        <label>Enter your message</label>
+                        <textarea name="message" id="message" rows="4" placeholder="Message..."></textarea>
+                    </div>
+
                     <!-- Subscription -->
                     <label>Please, subscribe me to the monthly newsletter</label>
                     <input type="checkbox" name="subscribe" id="subscribe">    
                 </fieldset>
+
+                <!-- Submit -->
                 <button type="submit">Submit</button>
             </form>
         </section>
@@ -92,14 +105,20 @@
 
     <!-- Footer -->
     <footer>
-        <p>©2024 | Dry Oar | Natalia Mendoza</p>
+        <div>
+            <p class="contact-p">©2024 | Dry Oar | Natalia Mendoza</p>
+            <a href="https://app.moqups.com/hqtIrQ4qihawlVHpmiFEMYMkYFETVYpT/view/page/ad64222d5">Contact Us - Wireframe</a>
+        </div>
         <nav class="sociallinks">
-            <a href="https://www.facebook.com/"></a>
+            <a href="https://www.facebook.com/">
                 <img src="images/logo-facebook.png" alt="Facebook">
-            <a href="https://www.instagram.com/"></a>
+            </a>
+            <a href="https://www.instagram.com/">
                 <img src="images/logo-instagram.png" alt="Instagram">
-            <a href="https://www.youtube.com/"></a>
+            </a>
+            <a href="https://www.youtube.com/">
                 <img src="images/logo-youtube.png" alt="YouTube">
+            </a>
         </nav>
     </footer>
 </body>
