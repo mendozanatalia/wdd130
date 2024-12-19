@@ -308,6 +308,24 @@ footer nav {
 /* CONTACT US */
 /* ------------------------------------------------------ */
 
+.employees-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5% 10% 0 10%;
+}
+
+.employees-container figure {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.employees-container img {
+    width: 100%;
+    padding: 5px;
+}
+
 .info-container {
     display: flex;
     flex-direction: column;
@@ -349,9 +367,11 @@ input[type="checkbox"] {
     vertical-align: bottom;
 }
 
-/* .footer-contact {
-    text-align: center;
-} */
+iframe {
+    width: 600;
+    height: 450;
+    border: 0;
+}
 
 /* ------------------------------------------------------ */
 /* HOME PAGE */
