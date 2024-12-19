@@ -119,6 +119,7 @@ button {
     font-size: 1.2rem;
     font-weight: 500;
     border: none;
+    margin: 1rem 0;
 }
 
 /* HEADER */
@@ -333,6 +334,8 @@ footer nav {
     padding: 5% 20% 0 20%;
 } 
 
+/* form */
+
 .form-container {
     background-color: var(--accent2-color);
     display: flex;
@@ -342,23 +345,28 @@ footer nav {
     padding: 1rem;
 }
 
+.field {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+}
+
 fieldset {
     display: grid;
-    grid-template-columns: 1fr 2fr;
     border: none;
 }
 
-.column1 {
-    grid-column: 1/2;
-}
-
-.column2 {
-    grid-column: 2/3;
+.text-bold {
+    font-weight: bold;
 }
 
 label {
     text-align: left;
-    padding: .5rem;    
+    margin-bottom: 5px;    
+}
+
+input, textarea {
+    padding: .75rem;
 }
 
 input[type="checkbox"] {
