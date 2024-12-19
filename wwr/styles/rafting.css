@@ -10,7 +10,7 @@
     padding: 0;
 }
 
-/* Root (Variables) */
+/* root (variables) */
 :root {
     --primary-color: #134266;
     --secondary-color: #F7F7F7;
@@ -36,7 +36,7 @@
     --paragraph-font-weight: 500;    
 }
 
-/* Headings and paragraph */
+/* headings and paragraph */
 h1 {
     font-family: var(--campaign-font);
     font-weight: var(--campaign-font-weight);
@@ -72,21 +72,53 @@ h5 {
     padding: 1rem;
 }
 
-p, form, button {
+p, form {
     font-family: var(--paragraph-font);
     font-weight: var(--paragraph-font-weight);
     color: black;
     padding: 1rem;
 }
 
+/* anchor */
+
 a {
     text-decoration: none;
     font-family: var(--paragraph-font);
+    color: var(--nav-link-color);
+    display: block;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
 }
+
+a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* figcaption */
 
 figcaption {
     font-family: var(--paragraph-font);
     text-align: center;
+}
+
+/* button */
+
+button {
+    width: 25%;
+    height: 3rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
 }
 
 /* HEADER */
@@ -98,9 +130,8 @@ header {
 }
 
 header .logo {
-    width: 180px;
-    margin: 0;
-    padding: 20px;
+    width: 120px;
+    padding: 2.5%;
 }
 
 header .logo-container {
@@ -120,8 +151,9 @@ header nav {
 
 header nav a {
     display: block;
-    color: var(--nav-link-color);
     padding: 1rem;
+    width: 100%;
+    text-align: center;
 }
 
 header nav a:hover {
@@ -131,14 +163,31 @@ header nav a:hover {
 
 /* Hero */
 .hero {
-    position: relative;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
 }
 
-.hero img {
-    display: block;
+.hero > img {
     width: 100%;
     height: auto;
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+
+.hero > div {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    display: block;
+    grid-column: 1/4;
+    grid-row: 1/4;
+    background-color: rgb(0 0 0 / 0.5);
 }
 
 /* FOOTER */
@@ -148,9 +197,12 @@ footer {
     grid-template-columns: repeat(3, 1fr);
 }
 
-footer p {
+footer div {
     grid-column: 2/3;
-    place-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 footer nav {
@@ -160,8 +212,19 @@ footer nav {
     align-self: center;
 }
 
+.contact-p {
+    padding-bottom: 0;
+}
+
+.sociallinks {
+    display: flex;
+    flex-direction: row;
+
+}
+
 .sociallinks img {
     max-width: 40px;
+    margin: 5px;
 }
 
 /* ------------------------------------------------------ */
@@ -170,24 +233,24 @@ footer nav {
 
 .hero article {
     background-color: rgb(251 225 114 / 0.9);
-    position: absolute;
-    top: 20%;
-    right: 20%;
-    left: 20%;
+    text-align: center;
     height: auto;
 }
 
-.hero article img {
-    float: inline-end;
-    max-width: 40%;
-    margin: 1rem;
+.about-article {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-article img {
+    width: 25%;
 }
 
 /* Section: History */
 .history {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 10px;
+    padding: 0 5%;
 }
 
 .history .p1 {
@@ -220,6 +283,7 @@ footer nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 5%;
 }
 
 .adventure h2 {
@@ -244,36 +308,39 @@ footer nav {
 /* CONTACT US */
 /* ------------------------------------------------------ */
 
-/* Form */
+.info-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5% 20% 0 20%;
+} 
+
 .form-container {
     background-color: var(--accent2-color);
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    margin: 10%;
-    border-radius: .5rem;
-}
-
-.info-column {
-    background-color: var(--accent1-color);
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-form {
     display: flex;
-    flex-flow: column;
-    background-color:var(--accent2-color);
-    padding: 2rem;
+    flex-direction: column;
+    margin: 5% 20%;
     border-radius: .5rem;
+    padding: 1rem;
 }
 
 fieldset {
     display: grid;
+    grid-template-columns: 1fr 2fr;
+    border: none;
+}
 
+.column1 {
+    grid-column: 1/2;
+}
+
+.column2 {
+    grid-column: 2/3;
 }
 
 label {
-    text-align: left;    
+    text-align: left;
+    padding: .5rem;    
 }
 
 input[type="checkbox"] {
@@ -282,26 +349,57 @@ input[type="checkbox"] {
     vertical-align: bottom;
 }
 
-button {
-    align-self: self-end;
-    width: 25%;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    border-radius: 0.5rem;
-    font-size: 1.2rem;
-}
-
-button:hover {
-    background-color: var(--accent1-color);
-    color: var(--primary-color);
-}
+/* .footer-contact {
+    text-align: center;
+} */
 
 /* ------------------------------------------------------ */
 /* HOME PAGE */
 /* ------------------------------------------------------ */
 
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5% 10%;
+}
 
+.gallery h2 {
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gallery-container figure {
+    padding: 10px;
+}
+
+.gallery img{
+    width: 100%;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2.5% 5%;
+}
+
+.contact-section img {
+    width: 80%;
+}
+
+.contact-section article {
+    background-color: var(--accent2-color);
+    height: 90%;
+    padding: 2%;
+}
 
 /* ------------------------------------------------------ */
 /* TRIPS */
 /* ------------------------------------------------------ */
+
