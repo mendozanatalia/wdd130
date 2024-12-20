@@ -18,9 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
-<!-- Body -->
 <body>
-    <!-- Header -->
     <header>
         <!-- Logo -->
         <div class="logo-container">
@@ -35,73 +33,73 @@
         </nav>
     </header>
 
-    <!-- Main -->
     <main>
         <!-- Hero -->
         <div class="hero">
             <img src="images/hero-home.png" alt="hero">
             <span class="hero-overlay"></span>
-
-            <div>
+            <div class="hero-home">
                 <h1>DRY OAR: White Water Rafting</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illo sequi voluptates explicabo, nulla beatae dolores asperiores provident debitis. Repudiandae velit illo cupiditate culpa ut dolores recusandae unde quis iusto!</p>
-                <button>
-                    <a href="trips.html">TRIPS</a>
-                </button>
+                <form class="btn" action="trips.html">
+                    <button type="submit">TRIPS</button>
+                </form>
             </div>
         </div>
-
-        <!-- Offerings -->
-        <section class="gallery">
-            <h2>OFFERS</h2>
-            <div class="gallery-container">
+        
+        <!-- Purpose and offerings -->
+        <section class="purpose-container">
+            <h2>PURPOSE & OFFERINGS</h2>
+            <div class="purpose-grid">
                 <div class="card">
-                    <h3>Hola</h3>
+                    <h3>Purpose</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eveniet esse perferendis dignissimos quam ex omnis necessitatibus tenetur aperiam voluptates fugiat, id, iusto reprehenderit nesciunt iste inventore quasi alias repellendus.</p>
-                    <ul>
-                        <li>Hola</li>
-                        <li>Hola</li>
-                    </ul>
-                    <p>Hola hola</p>
-                </div>
-
-
                     <img src="images/rafting-1.jpg" alt="rafting1">
-                </figure>
-                <figure>
-                    <img src="images/rafting-2.jpg" alt="rafting2">
-                    <figcaption>Feel the Rush</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting-3.jpg" alt="rafting3">
-                    <figcaption>Adrenaline</figcaption>
-                </figure>
+                </div>
+                
+                <div class="card">
+                    <h3>Offerings</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eveniet esse perferendis dignissimos quam ex omnis necessitatibus tenetur aperiam voluptates fugiat, id, iusto reprehenderit nesciunt iste inventore quasi alias repellendus.</p>
+                    <img src="images/rafting-2.jpg" alt="rafting1">
+                </div>
             </div>
         </section>
-
+        
         <!-- Contact Us -->
         <section class="contact-section">
             <img src="images/happy-client.jpg" alt="Join Us">
             <article>
                 <h2>Join Us for an Adventure!</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium culpa quae laborum atque rem maiores, doloremque, inventore id ex repellat ab unde. Dolorem quod, adipisci est ut ducimus qui ipsam.</p>
-                <button>
-                    <a href="contact.html">Contact Us</a>
-                </button>
+                <form action="contact.html">
+                    <button class="btn" type="submit">CONTACT US</button>
+                </form>
             </article>
         </section>
-
+        
         <!-- Email Newsletter -->
-        <section>
-            <form action="">
+        <section class="form-container">
+            <form class="home-form">
+                <h2>EMAIL NEWSLETTER</h2>
+                <p>Get updates, lastest discounts and promotions!</p>
                 <fieldset>
-                    Hola! :D
+                    <!-- Full Name -->
+                    <div class="field">
+                        <label class="text-bold">Name:</label>
+                        <input type="text" name="fullname" placeholder="Enter your preferred name...">
+                    </div>
+                    <!-- E-Mail -->
+                     <div class="field">
+                        <label class="text-bold">E-Mail:</label>
+                        <input type="email" name="email" placeholder="Enter your e-mail...">
+                     </div>
                 </fieldset>
+                <!-- Submit -->
+                <button type="submit">SUBSCRIBE</button>
             </form>
         </section>
-
     </main>
-
+    
     <!-- Footer -->
     <footer>
         <div>
