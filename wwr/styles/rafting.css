@@ -3,7 +3,6 @@
 /* ------------------------------------------------------ */
 /* GENERAL CONFIG */
 /* ------------------------------------------------------ */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -22,24 +21,21 @@
     --nav-hover-link-color: #134266;
     --nav-hover-background-color: #fce172;
     
-    --campaign-font: "Kaushan Script", display;
-    --campaign-font-weight: 900;
+    --h1-font: "Kaushan Script", display;
+    --h1-font-weight: 900;
     --h2-font: "Montserrat", sans-serif;
     --h2-font-weight: 800;
     --h3-font: "Montserrat", sans-serif;
     --h3-font-weight: 700;
-    --h4-font: "Montserrat", sans-serif;
-    --h4-font-weight: 600;
-    --h5-font: "Montserrat", sans-serif;
-    --h5-font-weight: 500;
     --paragraph-font: "Montserrat", sans-serif;
     --paragraph-font-weight: 500;    
 }
 
-/* headings and paragraph */
+/* typography */
 h1 {
-    font-family: var(--campaign-font);
-    font-weight: var(--campaign-font-weight);
+    font-family: var(--h1-font);
+    font-weight: var(--h1-font-weight);
+    font-size: 400%;
     color: var(--secondary-color);
     padding: 1rem;
 }
@@ -47,6 +43,7 @@ h1 {
 h2 {
     font-family: var(--h2-font);
     font-weight: var(--h2-font-weight);
+    font-size: 200%;
     color: var(--primary-color);
     padding: 1rem;
 }
@@ -58,29 +55,13 @@ h3 {
     padding: 1rem;
 }
 
-h4 {
-    font-family: var(--h4-font);
-    font-weight: var(--h4-font-weight);
-    color: var(--primary-color);
-    padding: 1rem;
-}
-
-h5 {
-    font-family: var(--h5-font);
-    font-weight: var(--h5-font-weight);
-    color: var(--primary-color);
-    padding: 1rem;
-}
-
-p, form {
+p, form, li {
     font-family: var(--paragraph-font);
     font-weight: var(--paragraph-font-weight);
-    color: black;
     padding: 1rem;
 }
 
 /* anchor */
-
 a {
     text-decoration: none;
     font-family: var(--paragraph-font);
@@ -88,7 +69,6 @@ a {
     display: block;
     height: 100%;
     width: 100%;
-    cursor: pointer;
 }
 
 a:hover {
@@ -96,20 +76,13 @@ a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
-a:link, a:visited {
-    text-decoration: none;
-    cursor: pointer;
-}
-
 /* figcaption */
-
 figcaption {
     font-family: var(--paragraph-font);
     text-align: center;
 }
 
 /* button */
-
 button {
     width: 25%;
     height: 3rem;
@@ -143,7 +116,7 @@ header .logo-container {
 
 header nav {
     background-color: var(--nav-background-color);
-    -webkit-text-stroke-width: 1px;
+    font-weight: bold;
     font-size: 1.2rem;
     display: flex;
     justify-content: space-around;
@@ -165,7 +138,7 @@ header nav a:hover {
 /* Hero */
 .hero {
     display: grid;
-    grid-template-columns: 1fr 80% 1fr;
+    grid-template-columns: 1fr 60% 1fr;
 }
 
 .hero > img {
@@ -193,7 +166,7 @@ header nav a:hover {
 
 /* FOOTER */
 footer {
-    background-color: #79C5D7;
+    background-color: var(--accent1-color);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -220,22 +193,19 @@ footer nav {
 .sociallinks {
     display: flex;
     flex-direction: row;
-
 }
 
 .sociallinks img {
-    max-width: 40px;
+    height: 40px;
     margin: 5px;
 }
 
 /* ------------------------------------------------------ */
 /* 1. ABOUT US */
 /* ------------------------------------------------------ */
-
 .hero article {
     background-color: rgb(251 225 114 / 0.9);
     text-align: center;
-    height: auto;
 }
 
 .about-article {
@@ -244,10 +214,10 @@ footer nav {
 }
 
 .about-article img {
-    width: 25%;
+    width: 40%;
 }
 
-/* Section: History */
+/* History */
 .history {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -279,7 +249,7 @@ footer nav {
     grid-row: 2/3;
 }
 
-/* Section: Adventure Awaits You! */
+/* Adventure Awaits You! */
 .adventure {
     display: flex;
     flex-direction: column;
@@ -306,9 +276,9 @@ footer nav {
 }
 
 /* ------------------------------------------------------ */
-/* CONTACT US */
+/* 2. CONTACT US */
 /* ------------------------------------------------------ */
-
+/* Employees */
 .employees-container {
     display: flex;
     justify-content: space-around;
@@ -382,8 +352,21 @@ iframe {
 }
 
 /* ------------------------------------------------------ */
-/* HOME PAGE */
+/* 3. HOME PAGE */
 /* ------------------------------------------------------ */
+
+
+/* ************************** */
+/* Codigo desde 0 para esta sección */
+.card {
+
+}
+
+
+
+
+
+/* ************************** */
 
 .gallery {
     display: flex;
@@ -428,6 +411,6 @@ iframe {
 }
 
 /* ------------------------------------------------------ */
-/* TRIPS */
+/* 4. TRIPS */
 /* ------------------------------------------------------ */
 
