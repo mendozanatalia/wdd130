@@ -84,15 +84,16 @@ figcaption {
 
 /* button */
 button {
-    width: 25%;
+    width: 30%;
     height: 3rem;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    border-radius: 0.5rem;
-    font-size: 1.2rem;
-    font-weight: 500;
+    margin: .5rem 0;
     border: none;
-    margin: 1rem 0;
+    border-radius: .5rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--paragraph-font);
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 /* HEADER */
@@ -138,7 +139,7 @@ header nav a:hover {
 /* Hero */
 .hero {
     display: grid;
-    grid-template-columns: 1fr 60% 1fr;
+    grid-template-columns: 1fr 50% 1fr;
 }
 
 .hero > img {
@@ -278,18 +279,27 @@ footer nav {
 /* ------------------------------------------------------ */
 /* 2. CONTACT US */
 /* ------------------------------------------------------ */
+/* Hero */
+.hero-contact p{
+    color: white;
+    font-size: 120%;
+    text-align: center;
+}
+
 /* Employees */
 .employees-container {
+    background-color: var(--accent2-color);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 5% 10% 0 10%;
+    padding: 2.5% 10%;
 }
 
 .employees-container figure {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .employees-container img {
@@ -297,20 +307,27 @@ footer nav {
     padding: 5px;
 }
 
+/* Company Information */
 .info-container {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 5% 20% 0 20%;
+    padding: 2.5% 20%;
 } 
 
-/* form */
+/* Map */
+iframe {
+    width: 600px;
+    height: 450px;
+    border: 0;
+}
 
+/* Form */
 .form-container {
     background-color: var(--accent2-color);
     display: flex;
     flex-direction: column;
-    margin: 5% 20%;
+    margin: 2.5% 20%;
     border-radius: .5rem;
     padding: 1rem;
 }
@@ -318,7 +335,7 @@ footer nav {
 .field {
     display: flex;
     flex-direction: column;
-    padding: .5rem;
+    padding: .5rem 0;
 }
 
 fieldset {
@@ -337,18 +354,6 @@ label {
 
 input, textarea {
     padding: .75rem;
-}
-
-input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    vertical-align: bottom;
-}
-
-iframe {
-    width: 600px;
-    height: 450px;
-    border: 0;
 }
 
 /* ------------------------------------------------------ */
