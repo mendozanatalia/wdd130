@@ -30,6 +30,8 @@
     --h2-font-weight: 800;
     --h3-font: "Montserrat", sans-serif;
     --h3-font-weight: 700;
+    --h4-font: "Montserrat", sans-serif;
+    --h4-font-weight: 600;
     --paragraph-font: "Montserrat", sans-serif;
     --paragraph-font-weight: 500;
 }
@@ -58,10 +60,26 @@ h3 {
     padding: 1rem;
 }
 
+h4 {
+    font-family: var(--h4-font);
+    font-weight: var(--h4-font-weight);
+    color: var(--primary-color);
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
 p, form, li {
     font-family: var(--paragraph-font);
     font-weight: var(--paragraph-font-weight);
     padding: 1rem;
+}
+
+ul {
+    margin-bottom: 1rem;
+}
+
+li {
+    padding: 0;
 }
 
 /* anchor */
@@ -87,7 +105,7 @@ figcaption {
 
 /* button */
 button {
-    width: 30%;
+    width: 40%;
     height: 3rem;
     margin: .5rem 0;
     border: none;
@@ -195,7 +213,7 @@ footer nav {
     align-self: center;
 }
 
-.contact-p {
+.wireframe {
     padding-bottom: 0;
 }
 
@@ -390,7 +408,6 @@ input, textarea {
 .purpose-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
 }
 
 .card {
@@ -431,4 +448,43 @@ input, textarea {
 /* ------------------------------------------------------ */
 /* 4. TRIPS */
 /* ------------------------------------------------------ */
+/* Hero */
+.hero-trips {
+    color: white;
+    font-size: 120%;
+    text-align: center;
+}
 
+/* Trips */
+.trips-container {
+    padding: 2.5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Questions */
+.questions-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5% 5%;
+}
+
+.questions-section img {
+    width: 80%;
+}
+
+.questions-section article {
+    background-color: var(--accent2-color);
+    height: 100%;
+    padding: 1rem;
+    margin-bottom: 2.5%;
+    box-shadow: var(--box-shadow);
+}
